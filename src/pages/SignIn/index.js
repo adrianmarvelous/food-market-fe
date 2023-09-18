@@ -5,19 +5,21 @@ import { Button, TextInput } from '../../components/atoms';
 
 const SignIn = () => {
     return (
-        <View>
+        <View style={styles.page}>
             <Header />
-            <View>
+            <View style={styles.container}>
                 <TextInput />
                 <TextInput />
                 <Button />
                 <Button />
             </View>
-            <Text>Sign In Page</Text>
         </View>
     )
 }
 
 export default SignIn;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    page: {flex:1},
+    container: {backgroundColor:'white', paddingHorizontal: 24, paddingVertical:26, marginTop:24,flex:1},
+})
